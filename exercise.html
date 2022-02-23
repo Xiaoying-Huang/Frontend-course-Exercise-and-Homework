@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise2.23</title>
+</head>
+<body>
+  <h1>Get in Touch</h1>
+  <form action="">
+    <label for="FirstName">First Name</label>
+    <br/><input type="text" id='FirstName' name='FirstName' value='' required>
+    <br><label for="Surname">Surname</label>
+    <br><input type="text" id='Surname' name='Surname' value='' required>
+    <br><label for="Email">Email</label>
+    <br><input type="email" id='Email' name='Email' value='' required>
+    <br><label for="Message">Message</label>
+    <br><textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+    <br><p>Where did you find us? (Please select the one that applies) </p>
+    <input type="radio" id='Internet' name='findus' value='Internet'>
+    <label for="Internet">Internet</label><br>
+    <input type="radio" name="findus" id="Friends" value='Friends'>
+    <label for="Friends">Friends</label><br>
+    <input type="radio" name="findus" id="Localmagazine" value='Localmagazine'>
+    <label for="Localmagazine">Local magazine</label><br>
+    <p>What do you like about our products? （Please choose all that are applicable.) </p>
+    <input type="checkbox" name="likeus" id="Design" value='Design'>
+    <label for="Design">Our unique design </label><br>
+    <input type="checkbox" name="likeus" id="Performance" value='Performance'>
+    <label for="Performance">Steady performance of our products</label><br>
+    <input type="checkbox" name="likeus" id="Service" value='Service'>
+    <label for="Service">Our customer service</label><br><br>
+    <label for="contact">Please choose your preferred way of further contact</label><br>
+    <select name="contact" id="contact"><option value="email">email</option>
+    <option value="telephone">telephone</option>
+    <option value="post">post</option></select>
+  </form>
+  <br><input type="submit" id='submit' name='submit'>
+</body>
+</html>
