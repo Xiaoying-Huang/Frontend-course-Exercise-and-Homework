@@ -1,0 +1,46 @@
+/*universal setting*/
+* {
+  box-sizing: border-box;
+}
+/*body setting--what is the difference between setting the properties in * and in body? Aren't they the same and applied to the whole page in this specific project?*/
+body {
+  background-color: #274471;
+  font-family: "Lato", sans-serif;
+}
+h1{
+  margin: 0 0 16px 0;/*extra css rule written to look more like the completed version-not sure if there's a way to make it more accurate, current value given is a bit of guessing game*/
+}
+/*setting up the container class, which includes all the elments of the form*/
+.container {
+  width: 400px;
+  margin: auto; /*to center the form*/
+  background-color: rgb(243, 243, 243);
+  border-radius: 6px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 25px; /*setting the padding within this element as it won't work when setting it in contactForm*/
+}
+.contactForm{
+  /*setting padding as 25px in this element won't give the effect as shown in photo so I set the padding in container class. not sure why*/
+  margin: 25px;
+}
+textarea, input[type="text"], input[type="email"]{
+  width: 100%;
+  padding: 10px 16px 10px 16px;
+  border-radius: 6px;
+  border-style: none; /*extra css rule written to reflect the correct border style of the input boxes*/
+  margin:8px 0;
+}
+input[type="submit"]{
+  background-color: #1ac0f3;
+  width: 100%;
+  margin:0 0 10px 0;/*extra css rule written to look more like the completed version-not sure if there's a way to make it more accurate, current value given is a bit of guessing game*/
+  border-style: none;
+  padding: 14px 20px;
+  border-radius: 6px;
+  color:white; /*extra css rule written to reflect the font color of the button*/
+  cursor: pointer;
+}
+input[type="text"]:hover,input[type="email"]:hover, textarea:hover{
+  background-color: rgb(172, 207, 223);
+}
